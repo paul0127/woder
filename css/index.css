@@ -1,1 +1,86 @@
 @import url(./common.css);
+
+.index_silder {
+  width: 100%;
+}
+.index_product {
+  background-image: url(../images/index/index_bg01.png);
+  background-size: cover;
+  background-position: center;
+}
+.index_product .title {
+  padding: 30px 0 40px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.index_product .product_slider {
+  padding-bottom: 100px;
+}
+.index_product .product_slider .item a {
+  display: block;
+  position: relative;
+}
+.index_product .product_slider .item a .image {
+  padding-bottom: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.index_product .product_slider .item a .name {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #104aa1;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 5px 0;
+}
+
+.index_about {
+  background-image: url(../images/index/index_bg02.png);
+  padding: 83px 0 30px 0;
+}
+.index_about .text {
+  width: 50%;
+  margin-left: auto;
+}
+.index_about .text .cname {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.index_about .text .ename {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.index_about .text .desc {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.index_about .text .desc::before{
+    content: '';
+    display: block;
+    width: 85px;
+    border: 2px solid #fff;
+    margin: 10px 0;
+}
+.index_about .text .more{
+    display: flex;
+    justify-content: flex-end;
+}
+.index_about .text .more a{
+    background-color: #0956CB;
+    color: #fff;
+    width: 110px;
+    height: 40px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.index_about .text .more a:hover{
+    opacity: .8;
+}

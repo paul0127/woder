@@ -7,34 +7,37 @@ body {
 }
 
 header {
-  border-bottom: 5px solid #0c64eb;
+  border-bottom: 7px solid #0c64eb;
 }
 header .head {
   display: flex;
+  margin: 5px 0;
 }
 header .head .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  margin: 10px 0;
 }
 header .head .menu .language {
   flex: 0 0 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  margin-right: 45px;
 }
 header .head .menu .language i {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 header .head .menu .language a {
   color: #333;
-  font-size: 1.25rem;
   text-decoration: none;
 }
-header .head .menu .language span{
+header .head .menu .language span {
   margin: 0 5px;
-  font-size: 1.25rem;
 }
 header .head .menu .menu_btn {
   display: none;
@@ -54,9 +57,10 @@ header .head .menu ul.nav > li {
 header .head .menu ul.nav > li > a {
   display: block;
   font-size: 1.5rem;
-  padding: 10px 5px;
+  padding: 5px;
   color: #333;
   text-decoration: none;
+  line-height: 1;
 }
 header .head .menu ul.nav > li > a:hover {
   opacity: 0.8;
@@ -91,6 +95,10 @@ header .head .menu ul.nav > li > ul.sub_menu > li > a {
 }
 header .head .menu ul.nav > li > ul.sub_menu > li > a:hover {
   opacity: 0.8;
+}
+header .head .menu .search_btn {
+  margin-left: 15px;
+  font-size: 1.25rem;
 }
 @media (max-width: 1200px) {
   header {
@@ -219,4 +227,59 @@ ul.bread li a {
 }
 .pager .next::before {
   content: '>';
+}
+
+footer {
+  background-color: #677a92;
+  padding: 20px 0;
+}
+footer .logo {
+  margin-bottom: 35px;
+}
+footer ul.menu {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin-bottom: 30px;
+}
+footer ul.menu li {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+footer ul.menu li::after {
+  content: '';
+  border-right: 1px solid #fff;
+  margin: 0 15px;
+  height: 20px;
+}
+footer ul.menu li:last-child:after {
+  display: none;
+}
+footer ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer .info .item {
+  flex: 1 0 33.3%;
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer .info .item:last-child {
+  margin-bottom: 40px;
+}
+footer .info .item label {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+footer .copyright{
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
 }

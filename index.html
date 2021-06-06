@@ -11,6 +11,10 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="./offset/owlCarousel/css/owl.carousel.min.css"
+    />
     <link rel="stylesheet" href="./offset/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -23,8 +27,8 @@
           /></a>
           <div class="menu">
             <div class="language">
-              <i class="fas fa-globe"></i><a href="#">中文</a
-              ><span>/</span><a href="#">English</a>
+              <i class="fas fa-globe"></i><a href="#">中文</a><span>/</span
+              ><a href="#">English</a>
             </div>
             <div class="menu_btn">
               <i class="fas fa-bars"></i>
@@ -61,5 +65,148 @@
         </div>
       </div>
     </header>
+    <div class="index_silder">
+      <div class="slider owl-carousel owl-theme">
+        <div class="item">
+          <a href="#"><img src="./images/index/banner.png" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="./images/index/banner.png" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="./images/index/banner.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="index_product">
+      <div class="container">
+        <div class="title">產品介紹</div>
+        <div class="product_slider owl-carousel owl-theme">
+          <div class="item">
+            <a href="#"
+              ><div
+                class="image"
+                style="background-image: url(./images/index/product01.jpg)"
+              ></div>
+              <div class="name">產品名稱</div></a
+            >
+          </div>
+          <div class="item">
+            <a href="#"
+              ><div
+                class="image"
+                style="background-image: url(./images/index/product02.jpg)"
+              ></div>
+              <div class="name">產品名稱</div></a
+            >
+          </div>
+          <div class="item">
+            <a href="#"
+              ><div
+                class="image"
+                style="background-image: url(./images/index/product03.jpg)"
+              ></div>
+              <div class="name">產品名稱</div></a
+            >
+          </div>
+          <div class="item">
+            <a href="#"
+              ><div
+                class="image"
+                style="background-image: url(./images/index/product04.jpg)"
+              ></div>
+              <div class="name">產品名稱</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="index_about">
+      <div class="container">
+        <div class="text">
+          <div class="cname">關於萬能</div>
+          <div class="ename">About Wondermachinery</div>
+          <div class="desc">
+            本萬能機械股份有限公司成立於2018年2月，為一轉投資的專業機械/機電設備研發、製造及銷售公司，專門針對市場上有切確需求的各項設備作研發及試製，目前已擁有數項新產品的國內及國際專利，如電控式緊急避難梯、病床式緊急避難梯、重力式避難梯及高樓移動式戶外昇降設備，並實際導入加工製造，銷售國內外市場。
+          </div>
+          <div class="more"><a href="#">More...</a></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./images/common/footlogo.png" alt="" /></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">關於我們</a></li>
+          <li><a href="#">最新消息</a></li>
+          <li><a href="#">產品介紹</a></li>
+          <li><a href="#">實績案例</a></li>
+          <li><a href="#">最新影片</a></li>
+          <li><a href="#">聯絡我們</a></li>
+        </ul>
+        <div class="info">
+          <div class="item">
+            <label for="">電話：</label>01-23456789
+          </div>
+          <div class="item">
+            <label for="">E-mail：</label>XXXX@gmail.com
+          </div>
+          <div class="item">
+            <label for="">傳真：</label>01-23456789
+          </div>
+          <div class="item">
+            <label for="">地址：</label>新北市汐止區新台五路一段75號9樓之4
+          </div>
+        </div>
+        <div class="copyright">Copyright© 2021 wondermachinery CO., LTD. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+      integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.18/vue.js"
+      integrity="sha512-vAl/vSCnL+gHF3h2bGnUOWs0tlJCd6T0SoWoKrMrE9dQmLEBVnYP5celRncFwGQXdWfK0mZMo/zAX5dZRG53Ow=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./offset/owlCarousel/js/owl.carousel.min.js"></script>
+    <script>
+      $('.slider').owlCarousel({
+        loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      })
+      $('.product_slider').owlCarousel({
+        loop: true,
+        dots: true,
+        margin: 68,
+        autoplay: false,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 4,
+          },
+        },
+      })
+    </script>
   </body>
 </html>
