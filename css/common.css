@@ -242,14 +242,11 @@ ul.bread {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   padding: 20px 0;
 }
 ul.bread li {
+  display: inline;
   color: #333;
-  display: flex;
   align-items: center;
 }
 ul.bread li::after {
