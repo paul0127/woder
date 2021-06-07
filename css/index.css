@@ -36,13 +36,13 @@
   color: #fff;
   text-align: center;
   font-size: 1.25rem;
-  padding: 5px 0;
-  height: 40px;
-  transition: height 0.3s ease-in,padding 0.3s ease-in,opacity 0.3s ease-in;
+  padding: 5px;
+  min-height: 40px;
+  transition: min-height 0.3s ease-in,padding 0.3s ease-in,opacity 0.3s ease-in;
 }
 .index_product .product_slider .item a:hover .name{
-  height: 100%;
-  padding-top: 45%;
+  min-height: 100%;
+  padding-top: 40%;
   background: linear-gradient(90deg, #0e6eff 35%, #104aa1 60%);
 	background: -moz-linear-gradient(90deg, #0e6eff 35%, #104aa1 60%);
 	background: -webkit-linear-gradient(90deg, #0e6eff 35%, #104aa1 60%);
@@ -77,6 +77,8 @@
 
 .index_about {
   background-image: url(../images/index/index_bg02.png);
+  background-size: cover;
+  background-position: center;
   padding: 83px 0 30px 0;
 }
 .index_about .text {
@@ -123,7 +125,7 @@
 }
 @media (max-width: 1200px) {
   .index_about{
-    background-position: right top;
+    background-position: 85% top;
   }
   .index_about .text {
     width: 100%;

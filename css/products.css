@@ -1,0 +1,204 @@
+@import url(./common.css);
+
+.products {
+  display: flex;
+}
+.products .left_menu {
+  flex: 0 0 260px;
+  margin-right: 50px;
+}
+.products .left_menu .title {
+  background-image: url(../images/products/left_menu.png);
+  background-size: cover;
+  color: #fff;
+  padding: 7px 16px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.products .left_menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.products .left_menu ul li {
+  margin-bottom: 8px;
+}
+.products .left_menu ul li a {
+  display: block;
+  font-size: 1.25rem;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+.products .left_menu ul li a:hover {
+  opacity: 0.8;
+}
+@media (max-width: 1200px) {
+  .products .left_menu {
+    display: none;
+  }
+}
+
+.products .frame {
+  flex: 1;
+}
+.products .frame ul.filter {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.products .frame ul.filter li {
+  margin-right: 12px;
+}
+.products .frame ul.filter li:last-child {
+  margin-right: 0;
+}
+.products .frame ul.filter li select {
+  background-color: #0c64eb;
+  color: #fff;
+  border-radius: 10px;
+  padding: 7px 10px;
+  outline: none;
+}
+.products .frame .products_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -7px;
+  margin-bottom: 100px;
+}
+.products .frame .products_list .item {
+  padding: 0 7px;
+  flex: 0 0 25%;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.products .frame .products_list .item .img {
+  padding-bottom: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  transition: background-size 0.3s ease-in;
+}
+.products .frame .products_list .item:hover .img {
+  background-size: 130%;
+}
+.products .frame .products_list .item .name {
+  color: #333;
+  font-size: 1.25rem;
+}
+.products .frame .products_list .item:hover .name {
+  color: #0c64eb;
+}
+@media (max-width: 1200px) {
+  .products .frame .products_list .item {
+    flex: 0 0 50%;
+  }
+}
+
+.products .frame .top {
+  display: flex;
+  margin-bottom: 50px;
+}
+.products .frame .top .b_img {
+  flex: 0 0 400px;
+  margin-right: 30px;
+  border: 1px solid #707070;
+}
+.products .frame .top .b_img img {
+  width: 100%;
+}
+.products .frame .top .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.products .frame .top .text .info_top .share {
+  margin-bottom: 10px;
+}
+.products .frame .top .text .info_top .name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.products .frame .top .text .s_img_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.products .frame .top .text .s_img_list .item {
+  flex: 0 0 33.33%;
+  padding: 0 10px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+.products .frame .top .text .s_img_list .item:nth-child(4),
+.products .frame .top .text .s_img_list .item:nth-child(5),
+.products .frame .top .text .s_img_list .item:nth-child(6) {
+  margin-bottom: 0;
+}
+.products .frame .top .text .s_img_list .item .s_img {
+  padding-bottom: 100%;
+  background-size: contain;
+  border: 1px solid #707070;
+}
+.products .frame .desc {
+  margin-bottom: 80px;
+}
+.products .frame .desc .title {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+}
+.products .frame .desc .title::after {
+  content: '';
+  display: block;
+  width: 200px;
+  border-bottom: 1px solid #0c64eb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.products .frame .desc .title i {
+  color: #0c64eb;
+  margin-right: 13px;
+}
+@media (max-width: 1200px) {
+  .products .frame .top {
+    flex-wrap: wrap;
+  }
+  .products .frame .top .b_img {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .products .frame .top .text .s_img_list{
+      display: none;
+  }
+}
+
+.go_back {
+  display: flex;
+  justify-content: center;
+}
+.go_back a {
+  background-color: #0c64eb;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 220px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.go_back a:hover {
+  opacity: 0.8;
+}

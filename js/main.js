@@ -1,10 +1,17 @@
 /*手機板選單*/
 let menu_btn = document.querySelector('.menu_btn')
-let menu = document.querySelector('header .menu')
+let menu = document.querySelector('header .menu ul.nav')
 let sub_menu_btn = document.querySelectorAll('header .menu ul.nav li.sub > a')
+let search_btn = document.querySelector('header .menu .search_btn')
+let search_bar = document.querySelector('header .menu .search_bar')
 
 menu_btn.addEventListener('click', () => {
   menu.classList.toggle('active')
+  search_bar.classList.remove('active')
+})
+search_btn.addEventListener('click', () => {
+  search_bar.classList.toggle('active')
+  menu.classList.remove('active')
 })
 
 sub_menu_btn.forEach((item) => {
