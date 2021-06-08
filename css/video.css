@@ -58,3 +58,9 @@
   font-size: 1.25rem;
   color: #bbbbbb;
 }
+@media (max-width: 1200px) {
+  .video .list .item {
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+}

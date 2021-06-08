@@ -1,14 +1,14 @@
 @import url(./common.css);
 
-.news .list {
+.case .list {
   margin: 0 -30px 80px -30px;
 }
-.news .list::after {
+.case .list::after {
   content: '';
   display: block;
   clear: both;
 }
-.news .list .item {
+.case .list .item {
   padding: 0 30px;
   width: 50%;
   float: left;
@@ -16,17 +16,17 @@
   cursor: pointer;
   text-decoration: none;
 }
-.news .list .item:nth-child(even) {
+.case .list .item:nth-child(even) {
   margin-top: 80px;
 }
-.news .list .item .img {
+.case .list .item .img {
   padding-bottom: 100%;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
   position: relative;
 }
-.news .list .item:hover .img::before {
+.case .list .item:hover .img::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -35,7 +35,7 @@
   opacity: 0.3;
   z-index: 2;
 }
-.news .list .item:hover .img::after {
+.case .list .item:hover .img::after {
   content: '新聞中心';
   position: absolute;
   top: 50%;
@@ -48,42 +48,72 @@
   z-index: 3;
   padding: 5px;
 }
-.news .list .item .name {
+.case .list .item .name {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
 }
-.news .list .item .desc {
+.case .list .item .desc {
   font-size: 1.25rem;
   color: #bbbbbb;
 }
 
-.news .info {
-  margin-top: 40px;
-  margin-bottom: 100px;
+.case .frame .top {
+  display: flex;
+  margin-bottom: 50px;
 }
-.news .info .title {
+.case .frame .top .b_img {
+  flex: 0 0 400px;
+  margin-right: 30px;
+  border: 1px solid #707070;
+}
+.case .frame .top .b_img img {
+  width: 100%;
+}
+.case .frame .top .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.case .frame .top .text .info_top .share {
+  margin-bottom: 10px;
+}
+.case .frame .top .text .info_top .name {
   font-size: 1.5rem;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: 700;
+  margin-bottom: 10px;
 }
-.news .info .banner {
-  padding-bottom: 30%;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 35px;
+.case .frame .desc {
+  margin-bottom: 80px;
 }
-.news .info .date {
-  font-size: 1.25rem;
+.case .frame .desc .title {
+  font-size: 1.5rem;
   padding-bottom: 10px;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+}
+.case .frame .desc .title::after {
+  content: '';
+  display: block;
+  width: 200px;
+  border-bottom: 1px solid #0c64eb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.case .frame .desc .title i {
+  color: #0c64eb;
+  margin-right: 13px;
 }
 @media (max-width: 1200px) {
-  .news .list .item {
-    width: 100%;
-    margin-bottom: 20px !important;
+  .case .frame .top {
+    flex-wrap: wrap;
+  }
+  .case .frame .top .b_img {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 

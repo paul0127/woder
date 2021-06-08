@@ -286,6 +286,13 @@ ul.bread li a {
 .editor {
   padding-top: 25px;
   font-size: 1.25rem;
+  margin-bottom: 80px;
+}
+.editor .text_center {
+  text-align: center;
+}
+.editor img {
+  max-width: 100%;
 }
 .editor .about_desc h2 {
   text-align: center;
@@ -392,6 +399,66 @@ ul.bread li a {
 .editor .timeline .list .item .text .desc li::before {
   content: '-';
   margin-right: 5px;
+}
+
+.editor .contact_desc {
+  display: flex;
+  margin: 0 -30px;
+}
+.editor .contact_desc iframe {
+  flex: 3;
+  padding: 0 30px;
+}
+.editor .contact_desc .text {
+  flex: 4;
+  padding: 0 30px;
+}
+.editor .contact_desc .text .title {
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+.editor .contact_desc .text .title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #bbb;
+  z-index: -1;
+}
+.editor .contact_desc .text .title span {
+  background-color: #fff;
+  padding-right: 10px;
+}
+.editor .contact_desc .text h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+.editor .contact_desc .text .item {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.editor .contact_desc .text .item label {
+  margin-bottom: 0;
+}
+@media (max-width: 1200px) {
+  .editor .contact_desc {
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  .editor .contact_desc iframe {
+    order: 2;
+    padding: 0 15px;
+    min-height: 300px;
+  }
+  .editor .contact_desc .text {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  .editor .contact_desc .text .title {
+    display: none;
+  }
 }
 
 /*分頁*/
