@@ -24,3 +24,15 @@ sub_menu_btn.forEach((item) => {
     }
   })
 })
+
+
+let s_img = document.querySelectorAll('.products .s_img_list .item .s_img')
+let b_img = document.querySelector('.products .b_img img')
+console.log(b_img)
+s_img.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    let url = item.dataset.url
+    console.log(url)
+    b_img.src = url
+  })
+})
