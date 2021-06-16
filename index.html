@@ -215,11 +215,7 @@
       integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA=="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.18/vue.js"
-      integrity="sha512-vAl/vSCnL+gHF3h2bGnUOWs0tlJCd6T0SoWoKrMrE9dQmLEBVnYP5celRncFwGQXdWfK0mZMo/zAX5dZRG53Ow=="
-      crossorigin="anonymous"
-    ></script>
+
     <script src="./offset/owlCarousel/js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
     <script>
@@ -240,7 +236,6 @@
       $('.product_slider').owlCarousel({
         loop: true,
         dots: true,
-        margin: 68,
         autoplay: false,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
@@ -249,9 +244,11 @@
         responsive: {
           0: {
             items: 2,
+            margin: 20,
           },
           1200: {
             items: 4,
+            margin: 68,
           },
         },
       })

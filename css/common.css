@@ -1,5 +1,3 @@
-@import url(../font/NotoSansTC-Bold.otf);
-@import url(../font/NotoSansTC-Regular.otf);
 html {
   font-size: 16px;
 }
@@ -145,6 +143,7 @@ header .head .menu .search_bar form button {
 @media (max-width: 1200px) {
   header .head {
     justify-content: space-between;
+    align-items: center;
   }
   header .head a.logo {
     flex: 0 0 200px;
@@ -443,6 +442,9 @@ ul.bread li a {
   margin-bottom: 0;
 }
 @media (max-width: 1200px) {
+  .editor .timeline .list .item .years {
+    display: none;
+  }
   .editor .contact_desc {
     flex-wrap: wrap;
     margin: 0 -15px;
@@ -509,6 +511,71 @@ ul.bread li a {
 }
 .pager .next::before {
   content: '>>';
+}
+
+/*回上一頁*/
+.go_back {
+  display: flex;
+  justify-content: center;
+}
+.go_back a {
+  background-color: #0c64eb;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 220px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.go_back a:hover {
+  opacity: 0.8;
+}
+
+
+/*上下頁*/
+.pager_list {
+  display: flex;
+  justify-content: center;
+}
+.pager_list a {
+  width: 220px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0c64eb;
+  background-color: #0c64eb;
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.pager_list a:hover {
+  opacity: 0.8;
+}
+.pager_list a:last-child {
+  margin-right: 0;
+}
+.pager_list a.prev,
+.pager_list a.next {
+  background-color: #fff;
+  color: #0c64eb;
+}
+.pager_list a.prev.disabled,
+.pager_list a.next.disabled {
+  border-color: #717171;
+  color: #717171;
+  cursor: default;
+}
+.pager_list a.prev.disabled:hover,
+.pager_list a.next.disabled:hover {
+  opacity: 1;
+}
+@media (max-width: 1200px) {
+  .pager_list a {
+    margin-right: 10px;
+  }
 }
 
 /*頁尾*/

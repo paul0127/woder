@@ -21,21 +21,32 @@
   padding: 46px 60px;
   margin-bottom: 60px;
 }
-.contact_form .input {
+.contact_form .con {
   display: flex;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin: 0 -15px;
 }
-.contact_form .input label {
-  flex: 0 0 70px;
+.contact_form .con .input {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.contact_form .con .input.half {
+  flex: 0 0 50%;
+}
+.contact_form .con .input .name {
+  flex: 0 0 100px;
   margin-top: 2px;
   margin-bottom: 0;
   font-size: 1.25rem;
   font-weight: 700;
 }
-.contact_form .input label font.red {
+.contact_form .con .input .name font.red {
   color: #ec0086;
 }
-.contact_form .input input[type='text'] {
+.contact_form .con .input input[type='text'] {
   flex: 1;
   min-width: 0;
   border-radius: 15px;
@@ -43,7 +54,18 @@
   outline: none;
   padding: 5px 20px;
 }
-.contact_form .input textarea {
+.contact_form .con .input input[type='radio'] {
+  margin-right: 10px;
+}
+.contact_form .con .input input[type='checkbox'] {
+  margin-right: 10px;
+}
+.contact_form .con .input label {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.contact_form .con .input textarea {
   flex: 1;
   min-width: 0;
   border-radius: 15px;
@@ -51,14 +73,34 @@
   outline: none;
   padding: 20px;
 }
-.contact_form .input.verify input {
+.contact_form .con .input select {
+  flex: 1;
+  min-width: 0;
+  border-radius: 15px;
+  border: 1px solid #a2a2a2;
+  outline: none;
+  padding: 5px 20px;
+}
+.contact_form .con .input.verify input {
   border-radius: 0;
   flex: 0 0 200px;
   margin-right: 10px;
 }
 @media (max-width: 1200px) {
   .contact_form {
-    padding: 20px 20px;
+    padding: 40px 15px;
+  }
+  .contact_form .con {
+    margin: 0;
+  }
+  .contact_form .con .input {
+    padding: 0;
+  }
+  .contact_form .con .input.half {
+    flex: 0 0 100%;
+  }
+  .contact_form .con .input.verify input {
+    flex: 0 0 100px;
   }
 }
 .send {
