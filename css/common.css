@@ -102,6 +102,27 @@ header .head .menu ul.nav > li > .sub_menu > ul > li > a {
 header .head .menu ul.nav > li > .sub_menu > ul > li > a:hover {
   opacity: 0.8;
 }
+header .head .menu ul.nav .mobile_lang {
+  display: none;
+  border-bottom: 1px solid #fff;
+}
+header .head .menu ul.nav .mobile_lang a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+header .head .menu ul.nav .mobile_lang a:hover {
+  opacity: 0.8;
+}
+header .head .menu ul.nav .mobile_lang a:last-child {
+  border-right: none;
+}
 header .head .menu .search_btn {
   margin-left: 10px;
   font-size: 1.25rem;
@@ -234,6 +255,9 @@ header .head .menu .search_bar form button {
   header .head .menu ul.nav > li.sub.active > a::after {
     transform: rotate(180deg);
   }
+  header .head .menu ul.nav .mobile_lang {
+    display: flex;
+  }
 }
 
 /*麵包屑*/
@@ -290,36 +314,36 @@ ul.bread li a {
 .editor .text_center {
   text-align: center;
 }
-.editor img {
+img {
   max-width: 100%;
 }
-.editor .about_desc h2 {
+.about_desc h2 {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
-.editor .about_desc p {
+.about_desc p {
   font-size: 1.25rem;
   margin-bottom: 88px;
   line-height: 2;
 }
 /*年代表*/
-.editor .timeline {
+.timeline {
   padding-bottom: 100px;
 }
-.editor .timeline h2 {
+.timeline h2 {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 80px;
 }
-.editor .timeline .list .item {
+.timeline .list .item {
   display: flex;
   align-items: stretch;
 }
-.editor .timeline .list .item .years {
+.timeline .list .item .years {
   flex: 3;
 }
-.editor .timeline .list .item .years .year {
+.timeline .list .item .years .year {
   display: flex;
   height: 100%;
   align-items: center;
@@ -330,19 +354,19 @@ ul.bread li a {
   font-size: 1rem;
   color: #fff;
 }
-.editor .timeline .list .item .years .now {
+.timeline .list .item .years .now {
   color: #0404be;
   text-align: center;
   margin-top: 20px;
   font-size: 1.25rem;
 }
-.editor .timeline .list .item:nth-child(2n + 1) .year {
+.timeline .list .item:nth-child(2n + 1) .year {
   background-color: #0c64eb;
 }
-.editor .timeline .list .item:nth-child(2n) .year {
+.timeline .list .item:nth-child(2n) .year {
   background-color: #0404be;
 }
-.editor .timeline .list .item .year::before {
+.timeline .list .item .year::before {
   content: '';
   width: 0;
   height: 0;
@@ -354,13 +378,13 @@ ul.bread li a {
   transform: translateX(-50%);
   z-index: 3;
 }
-.editor .timeline .list .item:nth-child(2n + 1) .year::before {
+.timeline .list .item:nth-child(2n + 1) .year::before {
   border-color: #0c64eb transparent transparent transparent;
 }
-.editor .timeline .list .item:nth-child(2n) .year::before {
+.timeline .list .item:nth-child(2n) .year::before {
   border-color: #0404be transparent transparent transparent;
 }
-.editor .timeline .list .item .year::after {
+.timeline .list .item .year::after {
   content: '';
   width: 0;
   height: 0;
@@ -373,51 +397,51 @@ ul.bread li a {
   transform: translate(-50%, 2px);
   z-index: 2;
 }
-.editor .timeline .list .item:last-child .year::after {
+.timeline .list .item:last-child .year::after {
   display: none;
 }
-.editor .timeline .list .item .text {
+.timeline .list .item .text {
   font-size: 1.25rem;
   display: flex;
   line-height: 2.5;
   flex: 4;
 }
-.editor .timeline .list .item .text label {
+.timeline .list .item .text label {
   font-weight: 700;
   color: #4b4bec;
   margin-right: 5px;
 }
-.editor .timeline .list .item .text .desc {
+.timeline .list .item .text .desc {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
 }
-.editor .timeline .list .item .text .desc li {
+.timeline .list .item .text .desc li {
   display: flex;
 }
-.editor .timeline .list .item .text .desc li::before {
+.timeline .list .item .text .desc li::before {
   content: '-';
   margin-right: 5px;
 }
 
-.editor .contact_desc {
+.contact_desc {
   display: flex;
   margin: 0 -30px;
 }
-.editor .contact_desc iframe {
+.contact_desc iframe {
   flex: 3;
   padding: 0 30px;
 }
-.editor .contact_desc .text {
+.contact_desc .text {
   flex: 4;
   padding: 0 30px;
 }
-.editor .contact_desc .text .title {
+.contact_desc .text .title {
   font-size: 1.5rem;
   position: relative;
   margin-bottom: 20px;
 }
-.editor .contact_desc .text .title::after {
+.contact_desc .text .title::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -426,39 +450,39 @@ ul.bread li a {
   border-bottom: 1px solid #bbb;
   z-index: -1;
 }
-.editor .contact_desc .text .title span {
+.contact_desc .text .title span {
   background-color: #fff;
   padding-right: 10px;
 }
-.editor .contact_desc .text h1 {
+.contact_desc .text h1 {
   font-size: 1.75rem;
   margin-bottom: 10px;
 }
-.editor .contact_desc .text .item {
+.contact_desc .text .item {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-.editor .contact_desc .text .item label {
+.contact_desc .text .item label {
   margin-bottom: 0;
 }
 @media (max-width: 1200px) {
-  .editor .timeline .list .item .years {
+  .timeline .list .item .years {
     display: none;
   }
-  .editor .contact_desc {
+  .contact_desc {
     flex-wrap: wrap;
     margin: 0 -15px;
   }
-  .editor .contact_desc iframe {
+  .contact_desc iframe {
     order: 2;
     padding: 0 15px;
     min-height: 300px;
   }
-  .editor .contact_desc .text {
+  .contact_desc .text {
     padding: 0 15px;
     margin-bottom: 30px;
   }
-  .editor .contact_desc .text .title {
+  .contact_desc .text .title {
     display: none;
   }
 }
@@ -532,7 +556,6 @@ ul.bread li a {
 .go_back a:hover {
   opacity: 0.8;
 }
-
 
 /*上下頁*/
 .pager_list {
