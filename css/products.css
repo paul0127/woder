@@ -126,7 +126,15 @@
 }
 .products .out_frame .frame .top .text .info_top .name {
   font-size: 1.5rem;
+  padding-bottom: 10px;
   margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  font-weight: 700;
+}
+.products .out_frame .frame .top .text .info_top .desc {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  white-space: pre-line;
 }
 .products .out_frame .frame .top .text .s_img_list {
   display: flex;
