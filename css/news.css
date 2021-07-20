@@ -57,6 +57,12 @@
 .news .list .item .desc {
   font-size: 1.25rem;
   color: #bbbbbb;
+  height: 150px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
 }
 
 .news .info {
