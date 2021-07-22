@@ -135,6 +135,7 @@
   font-size: 1rem;
   margin-bottom: 10px;
   white-space: pre-line;
+  line-height: 1.75;
 }
 .products .out_frame .frame .top .text .s_img_list {
   display: flex;
